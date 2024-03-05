@@ -10,6 +10,10 @@ public class TrainRequest {
     public TrainRequest(String s, String testTrain, List<Object> stationA) {
     }
 
+    public TrainRequest() {
+
+    }
+
     public String getNumber() {
         return number;
     }
