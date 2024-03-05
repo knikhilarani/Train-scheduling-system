@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-import java.util.List;
+
 
 @Entity
 @Getter
@@ -33,17 +33,13 @@ public class Train {
     @OneToMany(mappedBy = "train", cascade = CascadeType.ALL)
     private List<TrainStation> stations;
 
-    // Constructors, getters, and setters
-
-    // Constructor with parameters
     public Train(String name, String number, List<TrainStation> stations) {
         this.name = name;
         this.number = number;
         this.stations = stations;
     }
 
-    // Getters and setters
-    // Constructor with parameters
+
     public Train(String name, Long id, List<TrainStation> stations) {
         this.name = name;
         this.id = id;

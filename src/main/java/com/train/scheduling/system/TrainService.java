@@ -15,8 +15,7 @@ public class TrainService {
     private TrainStationRepository trainStationRepository;
     public void addTrain(TrainRequest request) {
         if (request.getStations() == null) {
-            // Handle the case where stations are null
-            // You may choose to throw an exception, log a warning, or take other appropriate action
+
 
             throw new IllegalArgumentException("Stations list in TrainRequest cannot be null");
         }

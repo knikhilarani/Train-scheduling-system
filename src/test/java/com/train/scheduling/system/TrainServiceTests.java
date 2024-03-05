@@ -25,7 +25,7 @@ public class TrainServiceTests {
 
     @Test
     public void testAddTrain() {
-        TrainRequest request = new TrainRequest("123", "Test Train", Arrays.asList("Station A", "Station B"));
+        TrainRequest request = new TrainRequest("123", "Test Train", Arrays.asList("Station A"));
         Train train = new Train();
         train.setNumber(request.getNumber());
         train.setName(request.getName());
@@ -36,3 +36,4 @@ public class TrainServiceTests {
 
         verify(trainRepository).save(any());
     }
+}

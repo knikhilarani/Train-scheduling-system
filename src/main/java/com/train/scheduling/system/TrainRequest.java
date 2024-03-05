@@ -7,6 +7,9 @@ public class TrainRequest {
     private String name;
     private List<String> stations;
 
+    public TrainRequest(String s, String testTrain, List<Object> stationA) {
+    }
+
     public String getNumber() {
         return number;
     }

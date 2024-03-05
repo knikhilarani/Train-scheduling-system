@@ -10,10 +10,27 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Java Development Kit (JDK) 8 or later
 - A text editor or an Integrated Development Environment (IDE) like IntelliJ IDEA or Eclipse
-
+- PostGreSQL
+-PostMan
 ### Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/java-train-system.git
+git clone https://github.com/knikhilarani/Train-scheduling-system.git
+
+2.Navigate to the project directory:
+
+3.Open the project in your IDE.
+
+4.In application.properties change the spring.datasource.username=postgres,spring.datasource.password=Nikhila@0401
+according to your system postgresql username and password
+
+5.Run the application
+
+6.The sample URL for ALL the API'S
+6.1.Post http://localhost:8080/trains/add
+6.2.Delete http://localhost:8080/trains/remove?number=20662
+6.3.PUT http://localhost:8080/trains/update
+6.4.GET http://localhost:8080/trains/find?source=Davangere%20Railway%20Station&destination=Bangalore%20City%20Junction
+
