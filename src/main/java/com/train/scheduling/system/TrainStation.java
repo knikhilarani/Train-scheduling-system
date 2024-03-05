@@ -1,5 +1,6 @@
 package com.train.scheduling.system;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,7 +23,8 @@ public class TrainStation {
     private Long stationId;
 
     @ManyToOne
-    @JoinColumn(name = "train_id", referencedColumnName = "id") // Update this line
+    @JoinColumn(name = "train_id", referencedColumnName = "id")
+    @JsonIgnore
     private Train train;
 
     @Column(name = "station_name", nullable = false)
